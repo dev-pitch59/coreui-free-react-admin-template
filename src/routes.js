@@ -1,4 +1,14 @@
 import React from 'react'
+import pitch59Category from './views/pitch59/category/Category'
+import pitch59Discounts from './views/pitch59/discounts/Discounts'
+import pitch59EP from './views/pitch59/ep/EP'
+import pitch59Dashboard from './views/pitch59/pitch59Dashboard'
+import pitch59PitchCards from './views/pitch59/pitchcards/PitchCards'
+import pitch59Products from './views/pitch59/products/Products'
+import pitch59Referals from './views/pitch59/referals/Referals'
+import pitch59ReportedReviews from './views/pitch59/reportedreviews/ReportedReviews'
+import pitch59Transactions from './views/pitch59/transactions/Transactions'
+import pitch59Users from './views/pitch59/users/Users'
 
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
 const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
@@ -53,6 +63,20 @@ const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
+  { path: '/pitch59/category', name: 'Category', component: pitch59Category },
+  { path: '/pitch59/discounts', name: 'Discounts', component: pitch59Discounts },
+  { path: '/pitch59/ep', name: 'EP', component: pitch59EP },
+  { path: '/pitch59/pitchcards', name: 'PitchCards', component: pitch59PitchCards },
+  { path: '/pitch59/products', name: 'Products', component: pitch59Products },
+  { path: '/pitch59/referals', name: 'Referals', component: pitch59Referals },
+  {
+    path: '/pitch59/reportedreviews',
+    name: 'ReportedReviews',
+    component: pitch59ReportedReviews,
+  },
+  { path: '/pitch59/transactions', name: 'Transactions', component: pitch59Transactions },
+  { path: '/pitch59/users', name: 'Users', component: pitch59Users },
+  { path: '/pitch59', name: 'Dashboard', component: pitch59Dashboard },
   { path: '/theme', name: 'Theme', component: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', component: Colors },
   { path: '/theme/typography', name: 'Typography', component: Typography },

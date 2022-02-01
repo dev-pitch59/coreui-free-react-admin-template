@@ -27,8 +27,68 @@ const _nav = [
   },
   {
     component: CNavTitle,
+    name: 'Pitch59Dashboard',
+  },
+  {
+    component: CNavItem,
+    name: 'Category',
+    to: '/pitch59/category',
+    icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Discounts',
+    to: '/pitch59/discounts',
+    icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'EP',
+    to: '/pitch59/ep',
+    icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Pitch Cards',
+    to: '/pitch59/pitchcards',
+    icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Products',
+    to: '/pitch59/products',
+    icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Referals',
+    to: '/pitch59/referals',
+    icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Reported Reviews',
+    to: '/pitch59/reportedreviews',
+    icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Transactions',
+    to: '/pitch59/transactions',
+    icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Users',
+    to: '/pitch59/users',
+    icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
+  },
+
+  {
+    component: CNavTitle,
     name: 'Theme',
   },
+
   {
     component: CNavItem,
     name: 'Colors',
